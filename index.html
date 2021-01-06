@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>WebGL</title>
+</head>
+<body>
+
+<div class="container mt-2 justify-content-center">
+    <div class="m-1" align="center">
+        <h1>Zadanie 1</h1>
+        <p style="width: 500px">Należy wykonać model 3D czworościanu, a następnie umożliwić jego rotację względem osi X,
+            Y i Z</p>
+
+        <form class="rotationCheckboxes">
+
+            <label class="mx-2">Rotacja X
+                <input type="checkbox" id="rotateX">
+            </label>
+            <label class="mx-2">Rotacja Y
+                <input type="checkbox" id="rotateY">
+            </label>
+            <label class="mx-2">Rotacja Z
+                <input type="checkbox" id="rotateZ">
+            </label>
+        </form>
+        <canvas id="glcanvas" width="500" height="300">Brak wsparcia dla elementu HTML canvas.</canvas>
+        <script src="js/exerciseOne/matrix.js"></script>
+        <script src="js/exerciseOne/main.js"></script>
+        <br/>
+        <input class="btn btn-primary btn-lg btn-block" style="width: 500px" type="button" value="Odśwież"
+               onclick="runWebGL()"/>
+        <a class="btn btn-dark text-light mt-2" href="exerciseTwo.html"> Zadanie 2 -></a>
+    </div>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>WebGL</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h1>Zadanie 1</h1>
+    <p>Należy wykonać model 3D czworościanu, a następnie umożliwić jego rotację względem osi X, Y i Z</p>
+    <div>
+        <form class="rotationCheckboxes">
+            <input type="checkbox" id="rotateX"> Rotacja X&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" id="rotateY"> Rotacja Y&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" id="rotateZ"> Rotacja Z
+        </form>
+        <canvas id="glcanvas" width="500" height="300">Brak wsparcia dla elementu HTML canvas.</canvas>
+        <script src="js/matrix2.js"></script>
+        <script src="js/main2.js"></script>
+        <br />
+        <input type="button" value="Odśwież" onclick="runWebGL()" />
+    </div>
+</body>
+</html> -->
